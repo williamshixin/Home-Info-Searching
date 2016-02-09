@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CSCI571 Homework9</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Search</string>
+    <string name="action_settings">Settings1</string>
+    <string name="action_search">search1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">Results from Zillow</string>
+    <string name="firstpage_title">Search Your Property Here</string>
+    <string name="address">Street Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="address_lable">Address*:</string>
+    <string name="city_lable">City*:</string>
+    <string name="state_lable">State*:</string>
+    <string name="zillow">zillow:</string>
+    <string name="facebook_app_id">1582172245344409</string>
+    <string name="facebook_alert">Post To Facebook</string>
+    <string name="facebook_post">Post Property Details</string>
+    <string name="facebook_cancel">Cancel</string>
+    <string name="invalid">No exact match found--Verify that the given address is correct</string>
+    <string name="noinput">This field is required</string>
+    <string-array name="states">
+    <item value="">Choose State</item>
+	<item value="AL">AL</item>
+	<item value="AK">AK</item>	
+	<item value="AZ">AZ</item>
+	<item value="AR">AR</item>
+	<item value="CA">CA</item>
+	<item value="CO">CO</item>
+	<item value="CT">CT</item>
+	<item value="DE">DE</item>
+	<item value="DC">DC</item>
+	<item value="FL">FL</item>
+	<item value="GA">GA</item>
+	<item value="HI">HI</item>
+	<item value="ID">ID</item>
+	<item value="IL">IL</item>
+	<item value="IN">IN</item>
+	<item value="IA">IA</item>
+	<item value="KS">KS</item>
+	<item value="KY">KY</item>
+	<item value="LA">LA</item>
+	<item value="ME">ME</item>
+	<item value="MD">MD</item>
+	<item value="MA">MA</item>
+	<item value="MI">MI</item>
+	<item value="MN">MN</item>
+	<item value="MS">MS</item>
+	<item value="MO">MO</item>
+	<item value="MT">MT</item>
+	<item value="NE">NE</item>
+	<item value="NV">NV</item>
+	<item value="NH">NH</item>
+	<item value="NJ">NJ</item>
+	<item value="NM">NM</item>
+	<item value="NY">NY</item>
+	<item value="NC">NC</item>
+	<item value="ND">ND</item>
+	<item value="OH">OH</item>
+	<item value="OK">OK</item>		
+	<item value="OR">OR</item>
+	<item value="PA">PA</item>
+	<item value="RI">RI</item>
+	<item value="SC">SC</item>
+	<item value="SD">SD</item>
+	<item value="TN">TN</item>
+	<item value="TX">TX</item>
+	<item value="UT">UT</item>
+	<item value="VT">VT</item>
+	<item value="VA">VA</item>
+	<item value="WA">WA</item>
+	<item value="WV">WV</item>
+	<item value="WI">WI</item>
+	<item value="WY">WY</item>
+    </string-array>
+
+
+</resources>

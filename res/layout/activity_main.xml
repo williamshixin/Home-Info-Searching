@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/zillow_background">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="330dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_send" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-95dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/address"
+        android:paddingLeft="10dp"
+        android:shadowRadius="10" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="-270dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/city"
+        android:paddingLeft="10dp" />
+
+    <Spinner
+        android:id="@+id/state"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-270dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:entries="@array/states"
+        android:prompt="@string/state" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-270dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/address_lable"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-150dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/city_lable"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-150dp"
+        android:layout_marginTop="230dp"
+        android:text="@string/state_lable"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="-150dp"
+       android:layout_marginTop="10dp"
+       android:text="@string/firstpage_title"
+       android:textColor="@android:color/white"
+       android:textSize="20sp"
+       android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="124dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="-90dp"
+        android:layout_marginTop="340dp"
+        android:contentDescription="@string/zillow"
+        android:src="@drawable/zillow" />
+
+     <View
+         android:id="@+id/line"
+         android:layout_width="280dp"
+         android:layout_height="1dp"
+         android:layout_marginLeft="-280dp"
+         android:layout_marginTop="385dp"
+         android:background="@android:color/white" />
+    
+      <TextView
+          android:id="@+id/invalid"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="-280dp"
+          android:layout_marginTop="375dp"
+          android:text="@string/invalid"
+          android:textColor="@android:color/white"
+          android:textSize="15dp"
+          android:textStyle="bold"
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/address_error"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="-300dp"
+          android:layout_marginTop="125dp"
+          android:text="@string/noinput"
+          android:textColor="#FF0000"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:visibility="invisible" />
+      
+      <TextView
+          android:id="@+id/city_error"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="-150dp"
+          android:layout_marginTop="215dp"
+          android:text="@string/noinput"
+          android:textColor="#FF0000"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:visibility="invisible" />
+      
+      <TextView
+          android:id="@+id/state_error"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="-150dp"
+          android:layout_marginTop="300dp"
+          android:text="@string/noinput"
+          android:textColor="#FF0000"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:visibility="invisible" />
+
+</LinearLayout>
+

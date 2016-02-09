@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+ 
+    <!-- 2 columns -->
+
+    <ScrollView
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp" 
+         android:visibility="visible">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black">
+
+ <TableLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:scrollbars="vertical"
+     android:stretchColumns="0,1,2" >
+
+  <TableRow
+      android:id="@+id/tableRow"
+      android:layout_width="wrap_content"
+      android:layout_height="10dp"
+      android:layout_margin="0.5dp"
+      android:background="#f6f6ff"
+      android:padding="2dip"
+      android:paddingTop="10dp" >
+ 
+       <TextView
+            android:id="@+id/facebook"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+         
+            android:paddingTop="-5dp"
+            android:text="See more details on Zillow"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+       
+        <Button
+            android:id="@+id/facebook_b"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share" />
+
+    </TableRow>     
+   </TableLayout>    
+
+ <TableRow
+     android:id="@+id/tableRow0"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="0.5dp"
+     android:background="@android:color/white"
+     android:padding="2dip"
+     android:paddingLeft="10dp" >
+ 
+        <TextView
+            android:id="@+id/hyperlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+      <TableLayout
+      
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       
+       android:scrollbars="vertical"
+       android:stretchColumns="0,1,2"
+        > 
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"
+        android:background="#f6f6ff"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/propertytype"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingTop="-5dp"
+            android:text="Property Type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/propertytype_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    
+     <TableRow
+         android:id="@+id/tableRow2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="@android:color/white"
+         android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/yearbuilt"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:text="Year Built"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/yearbuilt_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+
+     <TableRow
+         android:id="@+id/tableRow3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="#f6f6ff"
+         android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/lotsize"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Lot Size"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/lotsize_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+   
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="@android:color/white"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/finishedarea"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Finished Area"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/finishedarea_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+        android:background="#f6f6ff"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/bathrooms"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Bathrooms"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/bathrooms_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="@android:color/white"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/bedrooms"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Bedrooms"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/bedrooms_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+        android:background="#f6f6ff"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/taxassessmentyear"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Tax Assessment Year"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/taxassessmentyear_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"
+        android:background="@android:color/white"
+        android:padding="2dip"
+        android:paddingRight="10dp" >
+ 
+        <TextView
+            android:id="@+id/taxassessment"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Tax Assessment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/taxassessment_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="13sp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+        android:background="#f6f6ff"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/lastsoldprice"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Last Sold Price"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/lastsoldprice_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="@android:color/white"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/lastsolddate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Last Sold Date"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/lastsolddate_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+        android:background="#f6f6ff"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/zpe"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/zpe_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="@android:color/white"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/overallchange"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="30 Days Overall Change"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+  <RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/overallchange_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+        
+        <ImageView
+            android:id="@+id/arror"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="center" />
+
+        </RelativeLayout>
+
+    </TableRow>
+     <TableRow
+        android:id="@+id/tableRow13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+        android:background="#f6f6ff"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/alltimepropertyrange"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="All Time Property Range"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/alltimepropertyrange_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="@android:color/white"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/rzpe"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/rzpe_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+   
+    
+     <TableRow
+        android:id="@+id/tableRow15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+        android:background="#f6f6ff"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/rentchange"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="30 Days Rent Change"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ <RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/rentchange_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/rarror"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="center" />
+</RelativeLayout>
+    </TableRow>
+     <TableRow
+        android:id="@+id/tableRow16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="0.5dp"
+         android:background="@android:color/white"
+        android:padding="2dip" >
+ 
+        <TextView
+            android:id="@+id/alltimerentrange"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="All Time Rent Range"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+ 
+        <TextView
+            android:id="@+id/alltimerentrange_value"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF"
+            android:gravity="right|center_vertical"
+            android:paddingRight="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="12dp" />
+
+    </TableRow>
+    </TableLayout>
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+     <TextView
+      android:id="@+id/foot1"
+      android:layout_width="280dp"
+      android:layout_height="100dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="22dp"
+      android:layout_marginTop="5dp"
+      android:background="#FFFFFF"
+      android:gravity="center"
+      android:paddingRight="0dp"
+      android:textSize="12sp" />
+  </LinearLayout>
+    </LinearLayout>
+    
+    </ScrollView>
+ 
+  <FrameLayout
+      android:id="@+id/phasechart"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@android:color/white"
+      android:orientation="vertical" >
+    
+ <TextSwitcher
+     android:id="@+id/textSwitcher"
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:layout_marginTop="10dp"
+     android:textAlignment="center" >
+
+</TextSwitcher>
+
+<ImageSwitcher
+    android:id="@+id/imageSwitcher"
+    android:layout_width="fill_parent"
+    android:layout_height="219dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="80dp" >
+
+ </ImageSwitcher>
+
+<Button
+    android:id="@+id/buttonPrevious"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="80dp"
+    android:layout_marginTop="300dp"
+    android:text="PREVIOUS"
+    android:textSize="10sp" />
+
+ <Button
+     android:id="@+id/buttonNext"
+     android:layout_width="80dp"
+     android:layout_height="40dp"
+     android:layout_marginLeft="160dp"
+     android:layout_marginTop="300dp"
+     android:text="NEXT"
+     android:textSize="10sp" />
+
+ <TextView
+     android:id="@+id/foot2"
+     android:layout_width="280dp"
+     android:layout_height="100dp"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:layout_marginLeft="22dp"
+     android:layout_marginTop="345dp"
+     android:background="@android:color/white"
+     android:gravity="top|center"
+     android:paddingRight="0dp"
+     android:textSize="12sp" />
+ 
+ </FrameLayout>
+
+ 
+   
+</FrameLayout>
